@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'title-cera';
+  src: url('assets/fonts/Fontspring-DEMO-cerapro-light.otf');
+}
+
+@font-face {
+  font-family: 'body-cera';
+  src: url('assets/fonts/Fontspring-DEMO-cerapro-regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  font-family: 'body-cera';
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: 'title-cera', sans-serif;
+}
