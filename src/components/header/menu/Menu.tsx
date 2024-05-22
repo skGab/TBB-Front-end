@@ -16,17 +16,17 @@ import './menu.scss'
 
 function Menu({ toggle, animationClass }: any) {
     return (
-        <div id='menu' className={`container ${animationClass}`}>
+        <div id='menu' className={`${animationClass}`}>
             <div className='navegacao'>
                 {/* LOGO & CLOSE */}
-                <picture className="container logo mobile">
+                <picture className="logo mobile">
                     <img src={logo} alt="logo" />
                     <img className='close' src={close} alt="close" onClick={toggle} />
                 </picture>
 
                 {/* LINKS  */}
                 <div className='container links'>
-                    <picture className="container logo desktop">
+                    <picture className="logo desktop">
                         <img src={logo} alt="logo" />
                         <img className='close' src={close} alt="close" onClick={toggle} />
                     </picture>
@@ -58,7 +58,7 @@ function Menu({ toggle, animationClass }: any) {
 
             {/* PARTNERS */}
             <picture id='partners'>
-                <div className="card">
+                <div className="row">
                     <div className="bg">
                         <img src={logo1} alt="architecture logo" />
                     </div>
@@ -70,7 +70,7 @@ function Menu({ toggle, animationClass }: any) {
                     </div>
                 </div>
 
-                <div className="card">
+                <div className="row">
                     <div className="bg">
                         <img src={logo2} alt="dots" />
                     </div>
@@ -82,7 +82,7 @@ function Menu({ toggle, animationClass }: any) {
                     </div>
                 </div>
 
-                <div className="card">
+                <div className="row">
                     <div className="bg">
                         <img src={logo8} alt="ideas" />
                     </div>

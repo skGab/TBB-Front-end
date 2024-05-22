@@ -3,7 +3,6 @@ header {
   width: 100%;
   z-index: 1000;
 
-
   nav {
     font-size: 0.9rem;
     padding: 1rem 1.5rem;
@@ -12,7 +11,29 @@ header {
     justify-content: space-between;
     background-color: #ffffffcc;
 
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    @media screen and (min-width: 1400px) {
+      .nav-container {
+        justify-content: center;
+      }
+    }
+
     @media screen and (min-width: 992px) {
+      .nav-container {
+        padding: 0 3rem;
+        max-width: 1900px;
+        margin: 0 auto;
+        justify-content: space-between;
+      }
+
       margin: 0 auto;
       gap: 2rem;
     }

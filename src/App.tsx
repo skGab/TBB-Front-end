@@ -1,6 +1,6 @@
 import Footer from "./components/footer/Footer"
 import Header from "./components/header/Header"
-import Main from "./components/main/Main"
+import Index from "./components/index/Index"
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
       <Header />
 
       {/* MAIN */}
-      <Main />
+      <Index />
 
       {/* FOOTER */}
       <Footer />

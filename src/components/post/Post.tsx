@@ -5,22 +5,31 @@ interface PostProps {
     title: string
     imgPath: string
     style?: any
+    order?: any
+    info?: any
+    id: string
 }
 
-function Post({ title, imgPath, style }: PostProps) {
+function Post({ title, imgPath, style, order, info, id }: PostProps) {
     return (
-        <div className='container post' style={style}>
-            <img src={imgPath} alt="banner 2" />
+        <div id={id} className='post' style={style}>
 
-            <h2>{title}</h2>
+            <div className='image-container' style={order}>
+                <img src={imgPath} alt="banner 2" />
+            </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.</p>
+            <div className='info'>
+                <div className="info-container" style={info}>
+                    <h2>{title}</h2>
 
-            <button>
-                View details
-                <img src={arrowRight} width="20px" alt="arrow right" />
-            </button>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat.</p>
 
+                    <button>
+                        View details
+                        <img src={arrowRight} width="20px" alt="arrow right" />
+                    </button>
+                </div>
+            </div>
         </div>
     )
 }

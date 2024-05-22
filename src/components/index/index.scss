@@ -5,12 +5,25 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 375px;
+    min-height: 450px;
     background-color: #b1b1b1;
     position: relative;
 
     @media screen and (min-width: 992px) {
+      margin-bottom: 6rem;
       min-height: 100vh;
+
+      .scrollDown {
+        font-size: 14px;
+        font-weight: 300;
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        margin-right: 0;
+      }
     }
 
     picture {
@@ -21,10 +34,37 @@ main {
       right: 20px;
       position: absolute;
 
-      :nth-child(2) {
-        max-width: 64px;
+      .white {
+        transition: all 0.3s ease-out;
+        opacity: 1;
+        cursor: pointer;
       }
-      :last-child {
+
+      .blue {
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+        opacity: 0;
+        display: none;
+      }
+
+      .sound:hover .white,
+      .download:hover .white {
+        opacity: 0;
+        display: none;
+      }
+
+      .sound:hover .blue,
+      .download:hover .blue {
+        opacity: 1;
+        display: block;
+      }
+
+      .sound {
+        max-width: 64px;
+        margin-right: 2rem;
+      }
+
+      .download {
         max-width: 48px;
       }
     }
@@ -40,8 +80,9 @@ main {
     .desktop {
       padding-left: 2rem;
       text-align: left;
-      font-size: 3rem;
+      font-size: 4rem;
       margin-right: 5rem;
+      font-weight: bold;
       color: #ffffff;
     }
 

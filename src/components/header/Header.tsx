@@ -39,50 +39,52 @@ function Header() {
 
             {/* NAV */}
             <nav>
-                <div className='pairs'>
-                    {/* MAIN LOGO */}
-                    <a href="/">
-                        <img src={mainLogo} alt="main logo" />
-                    </a>
+                <div className="nav-container">
+                    <div className='pairs'>
+                        {/* MAIN LOGO */}
+                        <a href="#">
+                            <img src={mainLogo} alt="main logo" />
+                        </a>
 
-                    {/* CATEGORIES */}
-                    <a className='categories item open' onClick={toggleMenu}>
-                        <img className='icon' src={menu} alt="categories" />
-                        <p>Categories</p>
-                    </a>
-                </div>
+                        {/* CATEGORIES */}
+                        <a className='categories item open' onClick={toggleMenu}>
+                            <img className='icon' src={menu} alt="categories" />
+                            <p>Categories</p>
+                        </a>
+                    </div>
 
-                <div className='pairs'>
-                    <ul className='themes'>
-                        <li>Gifting</li>
-                        <li>Travel</li>
-                        <li>Adults Welcome</li>
-                        <li>Art & Home Décor</li>
-                        <li>Space</li>
-                        <li>Pop Culture</li>
-                        <li>Toddlers</li>
-                        <li>Real World Role Playing</li>
-                    </ul>
-                </div>
+                    <div className='pairs'>
+                        <ul className='themes'>
+                            <li><a href="#gifting">Gifting</a></li>
+                            <li><a href="#travel">Travel</a></li>
+                            <li><a href="#kids">Adults Welcome</a></li>
+                            <li><a href="#gifts">Art & Home Décor</a></li>
+                            <li><a href="">Space</a></li>
+                            <li><a href="">Pop Culture</a></li>
+                            <li><a href="">Toddlers</a></li>
+                            <li><a href="#fun">Real World Role Playing</a></li>
+                        </ul>
+                    </div>
 
-                <div className="pairs">
-                    {/* CONTACT US */}
-                    <a href="/" className='contact item'>
-                        <img className='icon' src={contactIcon} alt="contact icon" />
-                        <p>Contact Us</p>
-                    </a>
+                    <div className="pairs">
+                        {/* CONTACT US */}
+                        <a href="/" className='contact item'>
+                            <img className='icon' src={contactIcon} alt="contact icon" />
+                            <p>Contact Us</p>
+                        </a>
 
-                    {/* SEARCH */}
-                    <a href="/" className='search item'>
-                        <img className='icon' src={searchIcon} alt="search icon" />
-                        <p>Search</p>
-                    </a>
+                        {/* SEARCH */}
+                        <a href="/" className='search item'>
+                            <img className='icon' src={searchIcon} alt="search icon" />
+                            <p>Search</p>
+                        </a>
 
-                    {/* REQUEST */}
-                    <a href='/' className='Request item'>
-                        <img className='icon' src={request} alt=" request icon" />
-                        <p>Request</p>
-                    </a>
+                        {/* REQUEST */}
+                        <a href='/' className='Request item'>
+                            <img className='icon' src={request} alt=" request icon" />
+                            <p>Request</p>
+                        </a>
+                    </div>
                 </div>
             </nav>
         </header>

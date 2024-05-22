@@ -10,9 +10,10 @@ function Topic({ name, style }: TopicProps) {
         <div className='container topic' >
             <h3>{name}</h3>
 
-            <div className='line' style={style}></div>
+            <div className='line mobile' style={style}></div>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div className='line desktop' style={style}></div>
         </div>
     )
 }
