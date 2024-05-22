@@ -1,4 +1,4 @@
-import mainLogo from '../../assets/logos-menu/main-logo-mobile.svg'
+import mainLogo from '../../assets/images/main-logo-mobile.svg'
 import menu from '../../assets/icons/categories.svg'
 import request from '../../assets/icons/bag.svg'
 import searchIcon from '../../assets/icons/search.svg'
