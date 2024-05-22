@@ -1,0 +1,13 @@
+footer {
+  text-align: center;
+  padding: 2rem;
+
+  @media screen and (min-width: 992px) {
+    p {
+      margin: 0 auto;
+      max-width: 500px;
+      font-weight: lighter;
+      color: gray
+    }
+  }
+}
