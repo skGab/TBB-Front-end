@@ -5,20 +5,34 @@
 
 @font-face {
   font-family: 'body-cera';
-  src: url('assets/fonts/Fontspring-DEMO-cerapro-regular.otf');
+  src: url('assets/fonts/Fontspring-DEMO-cerapro-light.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 html,
 body {
+  font-size: 15px;
   font-family: 'body-cera';
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1,
 h2 {
   font-family: 'title-cera', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
 }

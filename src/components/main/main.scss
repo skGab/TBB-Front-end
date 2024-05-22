@@ -1,3 +1,66 @@
-.video {
-  background-color: #b1b1b1;
+main {
+  // VIDEO INTRO
+  .video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 375px;
+    background-color: #b1b1b1;
+    position: relative;
+
+    @media screen and (min-width: 992px) {
+      min-height: 100vh;
+    }
+
+    picture {
+      display: flex;
+      gap: 0.8rem;
+      align-items: flex-end;
+      bottom: 15px;
+      right: 20px;
+      position: absolute;
+
+      :nth-child(2) {
+        max-width: 64px;
+      }
+      :last-child {
+        max-width: 48px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    picture {
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    .desktop {
+      padding-left: 2rem;
+      text-align: left;
+      font-size: 3rem;
+      margin-right: 5rem;
+      color: #ffffff;
+    }
+
+    .mobile {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .desktop {
+      display: none;
+    }
+  }
+
+  // MAIN TITLE
+  h1 {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    max-width: 280px;
+    margin-bottom: 4rem;
+  }
 }

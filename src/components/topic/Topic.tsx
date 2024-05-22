@@ -2,14 +2,15 @@ import './topic.scss'
 
 interface TopicProps {
     name: string
+    style: any
 }
 
-function Topic({ name }: TopicProps) {
+function Topic({ name, style }: TopicProps) {
     return (
-        <div className='container'>
-            <h4>{name}</h4>
+        <div className='container topic' >
+            <h3>{name}</h3>
 
-            <div className='line'></div>
+            <div className='line' style={style}></div>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
