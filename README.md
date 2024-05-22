@@ -4,7 +4,7 @@
 <!-- THUMB -->
 <p align="center">
   <a href="https://github.com/skGab/TBB-Front-end" rel="noopener" target="_blank">
-        <img src="src/assets/images/doc_thumb.png" width="250px" style="box-shadow: 1px 2px 4px gray;" alt="Logo do Projeto" object-fit="cover">
+        <img src="./src/assets/images/doc_thumb.png" width="250px" style="box-shadow: 1px 2px 4px gray;" alt="Logo do Projeto" object-fit="cover">
   </a>
 </p>
 
